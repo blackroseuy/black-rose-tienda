@@ -2,12 +2,9 @@
 const WHATSAPP_NUMBER = '598991833717';
 // Editá estos ejemplos con tus productos reales. Las imágenes pueden ser URLs públicas de fotos tuyas.
 const products = [
-  {id:1,name:'Remera Black',price:890,description:'Remera de estilo urbano.',variants:'Talles: S · M · L · XL',image:''},
-  {id:2,name:'Hoodie Rose',price:1590,description:'Buzo cómodo de uso diario.',variants:'Talles: S · M · L · XL',image:''},
-  {id:3,name:'Gorra Essential',price:590,description:'Accesorio minimalista.',variants:'Color: negro',image:''},
-  {id:4,name:'Bolso Everyday',price:750,description:'Bolso práctico para todos los días.',variants:'Color: negro',image:''},
-  {id:5,name:'Remera Logo',price:790,description:'Diseño simple y versátil.',variants:'Talles: S · M · L · XL',image:''},
-  {id:6,name:'Accesorio Black',price:350,description:'Un detalle para completar el look.',variants:'Consultar disponibilidad',image:''}
+  {id:1,name:'Remera Black',price:650,description:'Remera de estilo urbano.',variants:'Talles: XL',image:''},
+
+  
 ];
 const cart = new Map();
 const money = n => new Intl.NumberFormat('es-UY',{style:'currency',currency:'UYU',maximumFractionDigits:0}).format(n);
