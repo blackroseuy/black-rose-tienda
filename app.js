@@ -1,5 +1,5 @@
 // CONFIGURACIÓN: cambiá el número por el tuyo, en formato internacional, sin +, espacios ni guiones.
-const WHATSAPP_NUMBER = '598991833717';
+const WHATSAPP_NUMBER = '59891833717';
 // Editá estos ejemplos con tus productos reales. Las imágenes pueden ser URLs públicas de fotos tuyas.
 const products = [
   {id:1,name:'Remera Black',price:650,description:'Remera de estilo urbano.',variants:'Talles: XL',image:''},
