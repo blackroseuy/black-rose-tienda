@@ -34,7 +34,7 @@ backdrop.addEventListener('click',e=>{if(e.target===backdrop)closeCart()});
 document.querySelector('#checkout').onclick=()=>{
   if(!cart.size){alert('Tu carrito está vacío. Agregá algún producto primero.');return}
   const lines=[...cart.entries()].map(([id,q])=>{const p=products.find(x=>x.id===id);return `• ${p.name} x${q} — ${money(p.price*q)}${p.variants?`\n  ${p.variants}`:''}`});
-  const message=['Hola, quiero realizar este pedido de BLACK ROSE:','',...lines,'',`TOTAL: ${money(total())}`,'','Mis datos:','Nombre:','Forma de entrega:','Dirección (si corresponde):','','Por favor, indicame los datos para realizar la transferencia bancaria y cómo enviar el comprobante.'].join('\n');
+  const message=['Hola, quiero realizar este pedido de BLACK ROSE:','',...lines,'',`TOTAL: ${money(total())}`,'','Mis datos:','Nombre:','Dirección :','','Por favor, indicame los datos para realizar la transferencia.'].join('\n');
   const url=`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   window.open(url,'_blank','noopener,noreferrer');
 };
