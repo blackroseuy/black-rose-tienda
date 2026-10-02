@@ -1,0 +1,38 @@
+BLACK ROSE — TIENDA SIMPLE CON PEDIDOS POR WHATSAPP
+
+ARCHIVOS
+- index.html: estructura de la tienda
+- styles.css: diseño adaptable a celulares y computadoras
+- app.js: catálogo de ejemplo, carrito y conexión a WhatsApp
+
+CÓMO PERSONALIZAR
+1. Abrí app.js con Bloc de notas, Visual Studio Code o cualquier editor de texto.
+2. El número ya está configurado como 598991833717. Debe estar en formato internacional, sin +, espacios ni guiones.
+3. En el arreglo `products`, reemplazá los seis productos de ejemplo. Cada producto tiene:
+   id: número único
+   name: nombre del producto
+   price: precio numérico en pesos uruguayos
+   description: descripción breve
+   variants: talles, colores u opciones
+   image: URL pública de la foto, o '' para mostrar un recuadro de muestra
+4. Guardá los cambios y abrí index.html en el navegador para probarlo.
+
+CÓMO PONER FOTOS
+Subí las fotos a un alojamiento público o a tu propio hosting y pegá la URL directa en el campo image de cada producto. Si la URL termina en .jpg, .png o .webp, normalmente funcionará. No uses enlaces privados de Google Drive.
+
+CÓMO PUBLICAR GRATIS CON GITHUB PAGES
+1. Creá una cuenta en https://github.com si no tenés una.
+2. Creá un repositorio nuevo, por ejemplo `black-rose-store`.
+3. Subí index.html, styles.css y app.js a la raíz del repositorio.
+4. Entrá en Settings > Pages.
+5. En Build and deployment, elegí Deploy from a branch, seleccioná la rama main y la carpeta /(root), y guardá.
+6. Esperá a que GitHub Pages publique el sitio. La dirección aparecerá en la misma sección de Pages.
+
+CÓMO FUNCIONA EL PEDIDO
+El cliente agrega productos al carrito y toca “Pedir por WhatsApp”. Se abre un mensaje prearmado con cantidades y total. El cliente debe enviar el mensaje desde WhatsApp. Luego coordinás transferencia y comprobante directamente con esa persona.
+
+IMPORTANTE
+- Los productos, precios y descripciones que vienen son ejemplos: cambialos antes de publicar.
+- Esta versión no cobra automáticamente, no confirma pagos y no guarda pedidos en una base de datos. Los pedidos se reciben por WhatsApp cuando el cliente envía el mensaje.
+- El carrito vive en la sesión de la página; si se recarga, puede perderse.
+- No ingreses contraseñas, datos de tarjetas ni claves bancarias en el sitio.
